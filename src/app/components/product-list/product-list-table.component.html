@@ -9,10 +9,14 @@
   </thead>
   <tbody>
     <tr *ngFor="let tempProduct of products">
-      <td><img src="{{ tempProduct.imageUrl }}" alt="" height="50" /></td>
-      <td>{{ tempProduct.name }}</td>
-      <td>{{ tempProduct.unitPrice | currency: "USD" }}</td>
-      <td>{{ tempProduct.unitsInStock }}</td>
+      <td class="aling-middle">
+        <img src="{{ tempProduct.imageUrl }}" alt="" height="50" />
+      </td>
+      <td class="aling-middle">{{ tempProduct.name }}</td>
+      <td class="aling-middle">
+        {{ tempProduct.unitPrice | currency: "USD" }}
+      </td>
+      <td class="aling-middle">{{ tempProduct.unitsInStock }}</td>
     </tr>
   </tbody>
 </table>
